@@ -50,20 +50,81 @@ The analysis is performed using **Pandas**, while categorical data preprocessing
 
 ---
 
-## 🗂️ Project Structure
+## 📂 Project Structure
 
 ```text
 DataAnalysis/
 │
-├── Data.txt
-│   └── Employee dataset used for analysis
+├── 📊 Data.csv
+│   └── Dataset used for data analysis and preprocessing
 │
-├── DataAnalysis.ipynb
-│   └── Jupyter Notebook containing the complete analysis
+├── 🌸 Iris.csv
+│   └── Iris dataset used for machine learning experiments
 │
-└── README.md
+├── 🎓 Placements.csv
+│   └── Student placement dataset used for prediction and analysis
+│
+├── 📁 test.csv/
+│   └── test.csv
+│       └── Additional test dataset
+│
+├── 🧠 KNN.ipynb
+│   └── K-Nearest Neighbors classification implementation
+│
+├── 🏷️ Lable_Encoder.ipynb
+│   └── Categorical data encoding using Label Encoding
+│
+├── 📈 Linear_Regression.ipynb
+│   └── Linear Regression implementation and prediction
+│
+├── 🔐 Logistic_Regression.ipynb
+│   └── Logistic Regression classification implementation
+│
+├── 🔢 ONE HOT ENCODING.ipynb
+│   └── Categorical feature encoding using One-Hot Encoding
+│
+├── ⚙️ pipeline.ipynb
+│   └── Machine learning preprocessing and pipeline implementation
+│
+├── 🧠 SVM.ipynb
+│   └── Support Vector Machine classification implementation
+│
+└── 📖 README.md
     └── Project documentation
 ```
+
+### 📌 File Overview
+
+| File                        | Description                                                 |
+| --------------------------- | ----------------------------------------------------------- |
+| `Data.csv`                  | Dataset used for data analysis and preprocessing            |
+| `Iris.csv`                  | Iris dataset for classification experiments                 |
+| `Placements.csv`            | Student placement dataset for predictive analysis           |
+| `test.csv/test.csv`         | Additional test dataset                                     |
+| `KNN.ipynb`                 | Implementation of the K-Nearest Neighbors algorithm         |
+| `Lable_Encoder.ipynb`       | Demonstrates categorical data encoding using Label Encoding |
+| `Linear_Regression.ipynb`   | Linear Regression model implementation                      |
+| `Logistic_Regression.ipynb` | Logistic Regression classification model                    |
+| `ONE HOT ENCODING.ipynb`    | Demonstrates One-Hot Encoding for categorical features      |
+| `pipeline.ipynb`            | Demonstrates ML preprocessing and pipeline creation         |
+| `SVM.ipynb`                 | Support Vector Machine implementation                       |
+| `README.md`                 | Project documentation                                       |
+
+### 🧠 Machine Learning Topics Covered
+
+This repository currently covers:
+
+* 📊 Data Analysis & Preprocessing
+* 🧹 Data Cleaning
+* 🏷️ Label Encoding
+* 🔢 One-Hot Encoding
+* ⚙️ Machine Learning Pipelines
+* 📍 K-Nearest Neighbors (KNN)
+* 📈 Linear Regression
+* 🔐 Logistic Regression
+* 🧠 Support Vector Machines (SVM)
+
+> **Note:** The repository also contains `test.csv.zip`. If this archive is only being used as a source for `test.csv`, consider keeping either the ZIP or extracted dataset in the repository rather than both, to avoid unnecessary duplication.
 
 ---
 
