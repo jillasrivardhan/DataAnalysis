@@ -1,650 +1,606 @@
-# 📊 Data Analysis & Machine Learning
+📊 Data Analysis & Machine Learning
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
   <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Seaborn-Visualization-4C72B0?style=for-the-badge" alt="Seaborn">
   <img src="https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
   <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
 </p>
 
 <p align="center">
-  <strong>A hands-on collection of Python data analysis and machine learning experiments using Pandas, NumPy, and Scikit-learn.</strong>
+  <strong>A practical collection of Data Analysis, Data Preprocessing, Exploratory Data Analysis, Visualization, and Machine Learning experiments using Python.</strong>
 </p>
 
----
+📖 About
 
-## 📖 About
+This repository contains hands-on work covering the fundamentals of Data Analysis and Machine Learning with Python.
 
-This repository contains my practical work while learning **Data Analysis and Machine Learning with Python**.
+The project progresses from data exploration and preprocessing to classification and regression algorithms. It also includes a more complete Heart Disease Analysis project that demonstrates exploratory data analysis, feature preprocessing, feature selection, model training, cross-validation, and model evaluation.
 
-It starts with fundamental data-analysis and preprocessing concepts and progresses toward implementing different machine-learning algorithms.
+Main Areas Covered
 
-The project covers:
+📊 Data Analysis with Pandas
 
-* 📊 Data analysis
-* 🧹 Data cleaning
-* ❓ Missing-value handling
-* 🔢 Numerical data processing
-* 🏷️ Label Encoding
-* 🔢 One-Hot Encoding
-* ⚙️ Machine Learning Pipelines
-* 📍 K-Nearest Neighbors
-* 📈 Linear Regression
-* 🔐 Logistic Regression
-* 🧠 Support Vector Machines
+🧹 Data Cleaning and Preprocessing
 
-The notebooks are designed as practical experiments where concepts are implemented and tested using real datasets.
+🔍 Exploratory Data Analysis (EDA)
 
----
+📈 Data Visualization with Matplotlib and Seaborn
 
-# 🚀 What This Repository Covers
+🔢 Label Encoding
 
-```text
-Data Analysis
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Data Preprocessing
-      │
-      ├── Missing Values
-      ├── Numerical Features
-      └── Categorical Features
-                  │
-                  ▼
-            Encoding
-           ┌──────┴──────┐
-           ▼             ▼
-     Label Encoding   One-Hot Encoding
-           │             │
-           └──────┬──────┘
-                  ▼
-          ML Preprocessing
-                  │
-                  ▼
-             Pipelines
-                  │
-                  ▼
-        Machine Learning Models
-       ┌──────┬──────┬──────┬──────┐
-       ▼      ▼      ▼      ▼
-      KNN    SVM  Linear   Logistic
-                  Regression Regression
-```
+🔤 One-Hot Encoding
 
----
+⚙️ Machine Learning Pipelines
 
-# ✨ Features
+📍 K-Nearest Neighbors (KNN)
 
-### 📊 Data Analysis
+🔐 Logistic Regression
 
-* Load datasets using Pandas
-* Inspect DataFrames
-* Understand columns and data types
-* Separate numerical and categorical features
-* Explore dataset structure
+🧠 Support Vector Machines (SVM)
 
-### 🧹 Data Preprocessing
+📈 Linear Regression
 
-* Detect missing values
-* Handle missing numerical values
-* Remove unnecessary data
-* Prepare datasets for machine learning
+❤️ Heart Disease Classification
 
-### 🏷️ Encoding
+🌲 Random Forest Classification
 
-The project demonstrates different ways of converting categorical data into numerical form.
+📏 Model Evaluation and Cross-Validation
 
-* Label Encoding
-* One-Hot Encoding
+🗂️ Project Structure
 
-### ⚙️ Machine Learning Pipelines
-
-The repository also explores how preprocessing and machine-learning models can be combined into reusable pipelines.
-
-### 🤖 Machine Learning Algorithms
-
-Currently implemented:
-
-* K-Nearest Neighbors (KNN)
-* Support Vector Machine (SVM)
-* Linear Regression
-* Logistic Regression
-
----
-
-# 🗂️ Project Structure
-
-```text
 DataAnalysis/
 │
-├── 📊 Data.csv
-│   └── Dataset used for data analysis and preprocessing
+├── Classification-Algorithms/
+│   ├── Iris.csv
+│   ├── KNN.ipynb
+│   ├── Logistic_Regression.ipynb
+│   ├── SVM.ipynb
+│   └── test.csv/
+│       └── test.csv
 │
-├── 🌸 Iris.csv
-│   └── Iris dataset used for classification experiments
+├── Data-Preprocessing/
+│   ├── Lable_Encoder.ipynb
+│   ├── ONE HOT ENCODING.ipynb
+│   └── pipeline.ipynb
 │
-├── 🎓 Placements.csv
-│   └── Student placement dataset used for predictive analysis
+├── Heart-Disease-Analysis/
+│   ├── heart.csv
+│   ├── HeartDisease.ipynb
+│   ├── HeartDisease_2.ipynb
+│   └── HeartDisease_3.ipynb
 │
-├── 📁 test.csv/
-│   └── test.csv
-│       └── Additional test dataset
+├── IPL-Analysis/
+│   ├── matches.csv
+│   ├── IPL_Analysis.ipynb
+│   └── IPL_Analysis_01.ipynb
 │
-├── 🧠 KNN.ipynb
-│   └── K-Nearest Neighbors implementation
+├── Regression-Algorithms/
+│   ├── Data.csv
+│   └── Linear_Regression.ipynb
 │
-├── 🏷️ Lable_Encoder.ipynb
-│   └── Label Encoding implementation
-│
-├── 📈 Linear_Regression.ipynb
-│   └── Linear Regression implementation
-│
-├── 🔐 Logistic_Regression.ipynb
-│   └── Logistic Regression implementation
-│
-├── 🔢 ONE HOT ENCODING.ipynb
-│   └── One-Hot Encoding implementation
-│
-├── ⚙️ pipeline.ipynb
-│   └── Machine Learning pipeline implementation
-│
-├── 🧠 SVM.ipynb
-│   └── Support Vector Machine implementation
-│
-└── 📖 README.md
-    └── Project documentation
-```
+├── Placements.csv
+├── test.csv.zip
+└── README.md
 
----
+❤️ Heart Disease Analysis
 
-# 📚 Notebook Overview
+The Heart-Disease-Analysis folder contains a machine learning project based on the heart.csv dataset.
 
-| Notebook                    | Description                                           |
-| --------------------------- | ----------------------------------------------------- |
-| `KNN.ipynb`                 | Implementation of the K-Nearest Neighbors algorithm   |
-| `Lable_Encoder.ipynb`       | Demonstrates Label Encoding for categorical data      |
-| `Linear_Regression.ipynb`   | Implements Linear Regression for predictive analysis  |
-| `Logistic_Regression.ipynb` | Implements Logistic Regression for classification     |
-| `ONE HOT ENCODING.ipynb`    | Demonstrates One-Hot Encoding                         |
-| `pipeline.ipynb`            | Demonstrates machine-learning preprocessing pipelines |
-| `SVM.ipynb`                 | Implements Support Vector Machine classification      |
+The objective is to analyze patient-related features and build classification models that predict the HeartDisease target.
 
----
+Workflow
 
-# 📊 Datasets
+Heart Disease Dataset
+        │
+        ▼
+Exploratory Data Analysis
+        │
+        ▼
+Data Cleaning
+        │
+        ▼
+Feature Encoding
+        │
+        ▼
+Feature Scaling
+        │
+        ▼
+Feature Selection
+        │
+        ▼
+Train/Test Split
+        │
+        ▼
+Model Training
+        │
+        ▼
+Evaluation
+        │
+        ▼
+Cross-Validation
+        │
+        ▼
+Feature Reduction & Accuracy Improvement
 
-## `Data.csv`
+🔎 Exploratory Data Analysis
 
-General-purpose dataset used for practicing:
+The notebooks inspect:
 
-* Data exploration
-* Data cleaning
-* Numerical feature handling
-* Categorical feature handling
-* Data preprocessing
+Dataset shape
 
----
+Data types
 
-## `Iris.csv`
+Missing values
 
-The classic **Iris dataset** used for classification experiments.
+Duplicate records
 
-It contains measurements related to different iris flower species.
+Descriptive statistics
 
-Common features include:
+Unique categorical values
 
-```text
-SepalLength
-SepalWidth
-PetalLength
-PetalWidth
-Species
-```
+Value distributions
 
-This dataset is particularly useful for experimenting with classification algorithms such as:
+Relationships between features and HeartDisease
 
-* KNN
-* SVM
-* Logistic Regression
+Visualizations include:
 
----
+Histograms
 
-## `Placements.csv`
+Box plots
 
-A student placement dataset used for predictive analysis.
+Count plots
 
-It can be used to explore relationships between student-related features and placement outcomes.
+🧹 Data Preprocessing
 
----
+The Heart Disease project demonstrates several preprocessing techniques.
 
-# 🛠️ Technologies & Libraries
+Categorical Encoding
 
-| Technology          | Purpose                            |
-| ------------------- | ---------------------------------- |
-| 🐍 Python           | Core programming language          |
-| 🐼 Pandas           | Data manipulation and analysis     |
-| 🔢 NumPy            | Numerical computing                |
-| 🤖 Scikit-learn     | Machine learning and preprocessing |
-| 📓 Jupyter Notebook | Interactive development            |
-| 📄 CSV              | Dataset storage                    |
+Examples include:
 
----
+df_copy['Sex'].replace({'M': 1, 'F': 0}, inplace=True)
 
-# 💻 Installation
+and:
 
-## 1. Clone the Repository
+df_copy['ExerciseAngina'] = df_copy['ExerciseAngina'].map({
+    'Y': 1,
+    'N': 0
+})
 
-```bash
+One-hot encoding is used for categorical features such as:
+
+ChestPainType
+
+RestingECG
+
+ST_Slope
+
+Feature Scaling
+
+Selected numerical features are standardized using StandardScaler:
+
+cols = ['Age', 'RestingBP', 'Cholesterol', 'MaxHR']
+
+ss = StandardScaler()
+
+df_copy[cols] = ss.fit_transform(df_copy[cols])
+
+🧠 Machine Learning Models
+
+The project explores multiple classification algorithms:
+
+Logistic Regression
+
+Random Forest Classifier
+
+Support Vector Classifier (SVC)
+
+K-Nearest Neighbors (KNN)
+
+Cross-validation is used to compare model performance.
+
+scores = cross_val_score(
+    model,
+    X,
+    y,
+    cv=2,
+    scoring="accuracy"
+)
+
+📏 Model Evaluation
+
+The Heart Disease notebooks use several evaluation metrics:
+
+Accuracy
+
+Confusion Matrix
+
+Classification Report
+
+Cross-Validation Accuracy
+
+Example:
+
+accuracy = accuracy_score(y_test, y_pred)
+
+confusionmatrix = confusion_matrix(y_test, y_pred)
+
+classificationreport = classification_report(y_test, y_pred)
+
+⚠️ Important: HeartDisease_3.ipynb Evaluation Order
+
+Please follow the cell execution order carefully in HeartDisease_3.ipynb.
+
+The notebook evaluates the Random Forest model twice:
+
+First, the model is evaluated using the complete feature set.
+
+Later, unwanted/redundant features are removed and the model is trained and evaluated again to compare the accuracy.
+
+First Evaluation
+
+The first model uses:
+
+features_all
+    ↓
+X / y
+    ↓
+train_test_split()
+    ↓
+RandomForestClassifier
+    ↓
+prediction
+    ↓
+accuracy_score
+    ↓
+confusion_matrix
+    ↓
+classification_report
+
+Second Evaluation
+
+After removing unwanted features, the notebook creates a new feature set:
+
+features_1
+    ↓
+X / y
+    ↓
+train_test_split()
+    ↓
+RandomForestClassifier
+    ↓
+prediction
+    ↓
+accuracy1
+    ↓
+confusionmatrix
+    ↓
+classificationreport
+
+🚨 Execution Note
+
+Because the evaluation metrics are used two times, do not run only the final evaluation cell.
+
+Run the cells in order:
+
+1. Run the first model-training/evaluation cell
+2. Run its evaluation output cell
+3. Continue to the feature-reduction section
+4. Run the second model-training/evaluation cell
+5. Run the second evaluation output cell
+
+In particular, the second evaluation depends on variables created by the preceding training cell.
+
+If you open the notebook after restarting the Jupyter kernel, Run All or execute the cells sequentially from the beginning to avoid NameError or undefined-variable issues.
+
+📊 Heart Disease Notebook Overview
+
+Notebook
+
+Purpose
+
+HeartDisease.ipynb
+
+Initial Heart Disease EDA and preprocessing
+
+HeartDisease_2.ipynb
+
+Preprocessing, feature selection, Random Forest, and multiple algorithms
+
+HeartDisease_3.ipynb
+
+Extended analysis with feature reduction and a second model evaluation
+
+heart.csv
+
+Heart Disease dataset
+
+🏏 IPL Analysis
+
+The IPL-Analysis folder contains notebooks for analyzing IPL match data.
+
+It uses Pandas and visualization techniques to answer questions such as:
+
+Winning margins
+
+Match results
+
+Team performance
+
+Match statistics
+
+Distribution of match outcomes
+
+Dataset:
+
+IPL-Analysis/matches.csv
+
+🧹 Data Preprocessing
+
+The Data-Preprocessing folder demonstrates common techniques for preparing data for machine learning.
+
+Label Encoding
+
+Lable_Encoder.ipynb demonstrates converting categorical values into numerical representations.
+
+One-Hot Encoding
+
+ONE HOT ENCODING.ipynb demonstrates converting categorical variables into separate binary columns.
+
+Pipelines
+
+pipeline.ipynb demonstrates combining preprocessing and machine learning steps into a reusable Scikit-learn pipeline.
+
+🤖 Classification Algorithms
+
+The Classification-Algorithms folder contains implementations of common classification algorithms.
+
+K-Nearest Neighbors
+
+KNN.ipynb
+
+Demonstrates classification based on the nearest observations.
+
+Logistic Regression
+
+Logistic_Regression.ipynb
+
+Demonstrates classification using Logistic Regression.
+
+Support Vector Machine
+
+SVM.ipynb
+
+Demonstrates classification using Support Vector Machines.
+
+📈 Regression Algorithms
+
+The Regression-Algorithms folder contains regression experiments.
+
+Linear Regression
+
+Linear_Regression.ipynb
+
+Demonstrates predicting a continuous target using Linear Regression.
+
+📚 Datasets
+
+The repository contains several datasets used for experimentation:
+
+Dataset
+
+Purpose
+
+heart.csv
+
+Heart disease classification
+
+Iris.csv
+
+Classification experiments
+
+matches.csv
+
+IPL match analysis
+
+Data.csv
+
+Regression/data analysis experiments
+
+Placements.csv
+
+Placement-related predictive analysis
+
+test.csv
+
+Additional testing data
+
+🛠️ Technologies & Libraries
+
+Technology
+
+Purpose
+
+Python
+
+Core programming language
+
+Pandas
+
+Data manipulation and analysis
+
+NumPy
+
+Numerical computing
+
+Matplotlib
+
+Data visualization
+
+Seaborn
+
+Statistical visualization
+
+Scikit-learn
+
+Machine learning
+
+Jupyter Notebook
+
+Interactive development
+
+💻 Installation
+
+1. Clone the Repository
+
 git clone https://github.com/YOUR_USERNAME/DataAnalysis.git
-```
 
-Replace `YOUR_USERNAME` with your GitHub username.
+2. Navigate to the Project
 
----
-
-## 2. Navigate to the Project
-
-```bash
 cd DataAnalysis
-```
 
----
+3. Install Dependencies
 
-## 3. Install Dependencies
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 
-Install the main libraries:
-
-```bash
-pip install pandas numpy scikit-learn jupyter
-```
-
-Or install them individually:
-
-```bash
-pip install pandas
-pip install numpy
-pip install scikit-learn
-pip install jupyter
-```
-
----
-
-# ▶️ Running the Project
+▶️ Running the Notebooks
 
 Start Jupyter Notebook:
 
-```bash
 jupyter notebook
-```
 
-Then open any of the notebooks:
+Then open the required notebook.
 
-```text
-KNN.ipynb
-Lable_Encoder.ipynb
-Linear_Regression.ipynb
-Logistic_Regression.ipynb
-ONE HOT ENCODING.ipynb
-pipeline.ipynb
-SVM.ipynb
-```
+For the Heart Disease project:
 
-Run the cells sequentially to reproduce the analysis and model experiments.
+Heart-Disease-Analysis/
+│
+├── HeartDisease.ipynb
+├── HeartDisease_2.ipynb
+├── HeartDisease_3.ipynb
+└── heart.csv
 
----
+Recommended Execution
 
-# 🧹 Data Preprocessing
+Run notebook cells from top to bottom because later cells depend on variables created earlier.
 
-Data preprocessing is an important part of the project.
+This is especially important for:
 
-## Missing Values
+HeartDisease_3.ipynb
 
-Missing values can be identified using:
+because the notebook performs model evaluation twice using different feature sets.
 
-```python
-df.isnull().sum()
-```
+🎯 Learning Objectives
 
-For numerical columns, missing values can be replaced with the mean:
+This repository is designed to build practical knowledge of:
 
-```python
-df["column"] = df["column"].fillna(
-    df["column"].mean()
-)
-```
+Python for Data Science
 
----
+Pandas
 
-# 🏷️ Label Encoding
+NumPy
 
-Label Encoding converts categorical values into numerical labels.
+Data Cleaning
 
-Example:
+Exploratory Data Analysis
 
-```python
-from sklearn.preprocessing import LabelEncoder
+Data Visualization
 
-encoder = LabelEncoder()
+Categorical Encoding
 
-df["Gender"] = encoder.fit_transform(
-    df["Gender"]
-)
-```
+Feature Scaling
 
-Example transformation:
+Feature Selection
 
-```text
-Before:
+Train/Test Splitting
 
-Male
-Female
-Male
+Classification
 
-After:
+Regression
 
-1
-0
-1
-```
+Random Forest
 
-> **Note:** `LabelEncoder` is primarily intended for encoding target labels. For multiple categorical feature columns, `OrdinalEncoder` or `OneHotEncoder` is generally more appropriate.
+KNN
 
----
+SVM
 
-# 🔢 One-Hot Encoding
-
-One-Hot Encoding creates separate binary columns for categorical values.
-
-Using Pandas:
-
-```python
-encoded = pd.get_dummies(
-    df,
-    columns=[
-        "Customer Type",
-        "Type of Travel",
-        "Class"
-    ],
-    dtype=int
-)
-```
-
-For example:
-
-```text
-Class
------
-Business
-Economy
-```
-
-can become:
-
-```text
-Class_Business    Class_Economy
-1                 0
-0                 1
-```
-
-This avoids assigning an artificial numerical order to categories.
-
----
-
-# ⚙️ Machine Learning Pipelines
-
-The project also explores machine-learning pipelines.
-
-A pipeline allows preprocessing and model training to be connected into a single workflow.
-
-Conceptually:
-
-```text
-Raw Data
-   │
-   ▼
-Preprocessing
-   │
-   ├── Encoding
-   ├── Scaling
-   └── Transformation
-   │
-   ▼
-Machine Learning Model
-   │
-   ▼
-Prediction
-```
-
-Example:
-
-```python
-from sklearn.pipeline import Pipeline
-
-pipeline = Pipeline([
-    ("preprocessing", preprocessing),
-    ("model", model)
-])
-```
-
----
-
-# 📍 K-Nearest Neighbors
-
-The `KNN.ipynb` notebook explores the **K-Nearest Neighbors** algorithm.
-
-KNN predicts a data point based on the classes or values of its nearest neighbors.
-
-Basic workflow:
-
-```text
-Training Data
-      │
-      ▼
-Calculate Distances
-      │
-      ▼
-Find K Nearest Neighbors
-      │
-      ▼
-Majority Vote
-      │
-      ▼
-Prediction
-```
-
----
-
-# 🧠 Support Vector Machine
-
-The `SVM.ipynb` notebook demonstrates **Support Vector Machine** classification.
-
-SVM attempts to find an optimal decision boundary that separates different classes.
-
-It is particularly useful for classification problems involving multiple features.
-
----
-
-# 📈 Linear Regression
-
-The `Linear_Regression.ipynb` notebook demonstrates **Linear Regression**.
-
-Linear Regression is used to predict a continuous numerical value.
-
-Example:
-
-```text
-Experience ───────► Salary
-```
-
-The model attempts to learn the relationship between input features and a continuous target.
-
----
-
-# 🔐 Logistic Regression
-
-The `Logistic_Regression.ipynb` notebook explores **Logistic Regression** for classification.
-
-Unlike Linear Regression, Logistic Regression is commonly used when the target represents categories.
-
-Example:
-
-```text
-Input Features
-      │
-      ▼
 Logistic Regression
-      │
-      ▼
-Class Prediction
-```
 
----
+Model Evaluation
 
-# 🎯 Learning Objectives
+Cross-Validation
 
-This repository is helping me build a strong foundation in:
+Feature Reduction
 
-* 🐍 Python for Data Science
-* 🐼 Pandas
-* 🔢 NumPy
-* 📊 Data Analysis
-* 🧹 Data Cleaning
-* 🔍 Exploratory Data Analysis
-* ❓ Missing Value Handling
-* 🔤 Categorical Data
-* 🏷️ Label Encoding
-* 🔢 One-Hot Encoding
-* ⚙️ ML Pipelines
-* 📍 KNN
-* 🧠 SVM
-* 📈 Linear Regression
-* 🔐 Logistic Regression
-* 🤖 Machine Learning fundamentals
-
----
-
-# 🔮 Future Improvements
-
-This repository will continue to grow as I learn more about Data Science and Machine Learning.
+🔮 Future Improvements
 
 Planned additions include:
 
-* 📊 Exploratory Data Analysis
-* 📈 Data Visualization
-* 🎨 Matplotlib
-* 🌈 Seaborn
-* 📐 Feature Scaling
-* 🔬 Feature Engineering
-* 🌳 Decision Trees
-* 🌲 Random Forest
-* 🚀 Gradient Boosting
-* 🧠 Neural Networks
-* 📊 Model Evaluation
-* 🎯 Hyperparameter Tuning
-* 🔄 Cross Validation
-* 📉 Confusion Matrix
-* 📈 ROC-AUC
-* 🏆 Model Comparison
-* 📦 More real-world datasets
+More real-world datasets
 
----
+Advanced feature engineering
 
-# 📌 Key Concepts
+Hyperparameter tuning
 
-### Data Analysis
+ROC-AUC evaluation
 
-```text
-Load → Explore → Clean → Transform → Analyze
-```
+Precision/Recall comparison
 
-### Machine Learning
+Advanced ensemble models
 
-```text
-Data
- ↓
-Preprocessing
- ↓
-Feature Selection
- ↓
-Train/Test Split
- ↓
-Model Training
- ↓
-Prediction
- ↓
-Evaluation
-```
+Decision Trees
 
----
+Gradient Boosting
 
-# 🤝 Contributing
+XGBoost
 
-This repository is primarily a personal learning project, but suggestions and improvements are welcome.
+Neural Networks
 
-If you'd like to contribute:
+Improved visualization
 
-```bash
-git clone https://github.com/YOUR_USERNAME/DataAnalysis.git
-```
+Automated model comparison
 
-Create a new branch:
+🤝 Contributing
 
-```bash
-git checkout -b feature/new-model
-```
+This is primarily a learning and experimentation repository. Suggestions, improvements, and educational contributions are welcome.
 
-Make your changes:
+If you want to contribute:
 
-```bash
+git checkout -b feature/new-analysis
+
+Make your changes, then:
+
 git add .
-git commit -m "Add new machine learning model"
-```
+git commit -m "Add new analysis"
+git push origin feature/new-analysis
 
-Push the branch:
+👨‍💻 Author
 
-```bash
-git push origin feature/new-model
-```
+Sri Vardhan
 
-Then open a Pull Request.
+Python Developer | Data Analysis Learner | Machine Learning Enthusiast
 
----
+Currently exploring:
 
-# ⭐ Support
+Python
 
-If you find this repository useful for learning **Python, Data Analysis, or Machine Learning**, consider giving it a ⭐ on GitHub.
+Data Analysis
 
----
+Machine Learning
 
-# 👨‍💻 Author
+Artificial Intelligence
 
-## Sri Vardhan
+Web Development
 
-🐍 Python Developer | 📊 Data Analysis Learner | 🤖 Machine Learning Enthusiast
+📜 License
 
-Currently learning and building projects around:
-
-* Python
-* Data Analysis
-* Machine Learning
-* Artificial Intelligence
-* Web Development
-
----
-
-# 📜 License
-
-This project is intended primarily for **educational and learning purposes**.
-
----
+This repository is intended primarily for educational and learning purposes.
 
 <p align="center">
 
-### 🐍 Learn • Analyze • Build • Improve 🚀
-
-**Made with Python & curiosity ❤️**
+🐍 Learn • Analyze • Build • Improve 🚀
 
 </p>
