@@ -327,6 +327,10 @@ Heart-Disease-Analysis/
 └── heart.csv
 ```
 
+# Paper Leak Prediction
+
+Paper Leak Prediction: A small-scale machine learning project that predicts paper leak confirmation status using EDA, data preprocessing, categorical encoding, and Logistic Regression with class balancing. The model achieved 71% accuracy, though performance varies due to the dataset's small size; using stratify=y during the train-test split resulted in 57% accuracy, highlighting the impact of limited data on model evaluation.
+
 ## Analysis Workflow
 
 The project progresses through:
